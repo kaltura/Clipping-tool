@@ -1,0 +1,61 @@
+html, body { width: 100%; height: 100%; text-align: center; margin: 0; padding: 0; }
+body { font-family: Arial; font-size: 12px; background: #f8f8f8; }
+input, textarea { font-family: Arial; font-size: 12px; }
+
+#wrapper { width: 950px; margin: 0 auto; text-align: left; padding-top: 20px; }
+#kdp3 { float: left; margin-left: 20px; width: 500px; height: 280px; }
+#clipper { margin: 30px 0 10px 20px; float: none; width: 910px; height: 110px; }
+#form { float: left; width: 385px; margin-left: 25px; }
+#newclip { position: relative; text-align: left; padding: 0 0 15px; border-bottom: 1px solid #d8d8d8; font-weight: bold; }
+#newclip a { background: url(../images/newclip.png); display: block; font-size: 12px; text-decoration: none; width: 111px; height: 16px; padding: 8px 0; color: #fff; font-weight: bold; text-align: center; }
+
+#fields { position: relative; padding-top: 30px; }
+.form { margin: 0 auto 10px; text-align: left; }
+.form .item { clear: both; margin: 5px 0; }
+.form label { float: left; width: 60px; margin-right: 20px; padding-top: 7px; }
+.form .text-field { float: left; padding: 2px 0 0 4px; border-radius: 2px; height: 28px; border-top: 1px solid #ababab; border-left: 1px solid #ababab; border-bottom: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; width: 298px; }
+.form #entry_desc { float: left; padding: 2px 0 0 4px; border-radius: 2px; border-top: 1px solid #ababab; border-left: 1px solid #ababab; border-bottom: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; width: 298px; height: 60px; }
+
+#actions { position: relative; margin: 0 20px 0 19px; }
+#actions .left a { display: inline-block; text-decoration: none; font-size: 12px; color: #000; padding-top: 7px; height: 21px; font-weight: bold; }
+#setStartTime { background: url(../images/setin.png); width: 53px; padding-left: 28px; }
+#setEndTime { background: url(../images/setout.png); width: 66px; padding-left: 15px; }
+#actions .right a { text-decoration: none; padding-left: 15px; font-size: 12px; color: #009acc; }
+#actions .seperator { color: #d8d8d8; display: inline-block; padding: 0 6px 0 8px; }
+#actions #preview { background: url(../images/preview.png) no-repeat center left; }
+#actions #delete { background: url(../images/delete.png) no-repeat center left; }
+#save { position: relative; margin: 45px 0 0; border-top: 1px solid #ccc; text-align: center; padding: 10px 0; }
+#save a { font-weight: bold; text-decoration: none; display: inline-block; background: url(../images/save.png); width: 71px; padding-top: 9px; height: 23px; text-align: center; color: #000;  }
+
+#embed { display: none; }
+#loader { display: none; z-index: 22; position: absolute; top: 0; right: 0; }
+
+.disable { display: block; z-index: 11; background: #f8f8f8; width: 100%; height: 100%; position: absolute; top: 0; left: 0; opacity: 0.9; zoom: 1; filter: alpha(opacity=90); }
+.left { float: left; text-align: left; }
+.right { float: right; text-align: right; }
+.hide { visibility: hidden; }
+
+/* IE Hacks */
+.ie #newclip .disable { height: 34px; }
+.ie #fields .disable { height: 220px; }
+.ie .text-field { width: 294px; }
+.ie #entry_desc { width: 294px; }
+.ie #save .disable { height: 44px; top: 1px; }
+
+/* Clearfix */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }	/* Controls the BR tag, which makes the WRAPPER float stretch for GECKO */
+.clearfix {display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.time-stepper { width: 111px; height: 28px; margin: 0; padding: 0 0 0 3px; display: inline-block; background: #fff; border-radius: 2px; border-top: 1px solid #ababab; border-left: 1px solid #ababab; border-bottom: 1px solid #e1e1e1; border-right: 2px solid #e1e1e1; font-size: 13px; }
+.time-stepper:after { content: ""; clear: both; display: block; }
+.time-stepper .colons { float: left; height: 19px; display: block; margin-top: 4px; padding: 1px 1px 0; }
+.time-stepper input { float: left; border: 0; padding: 0; margin-top: 6px; width: 16px; height: 16px; font-size: 13px; }
+.time-stepper input:focus{ background: #7a7b7b; color: #fff; }
+.time-stepper .miliseconds { width: 22px; }
+.time-stepper .hours { margin-left: 2px; }
+.time-stepper .controls { float: right; height: 28px; }
+.time-stepper .controls span { cursor: pointer; display: block; border-left: 1px solid #aeadae; border-bottom: 1px solid #aeadae; height: 13px; width: 15px; margin: 0; padding: 0; font-size: 8px; text-align: center; }
+.time-stepper .controls .plus { background: url(../images/time_up.png) no-repeat; }
+.time-stepper .controls .minus { background: url(../images/time_down.png) no-repeat; }
