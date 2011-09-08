@@ -256,8 +256,7 @@ clipApp.activateButtons = function() {
 	});
 
 	$("#save a").click( function() {
-		alert("This is just a demo version save is not allowed");
-		// clipApp.doSave();
+		clipApp.doSave();
 		return false;
 	});
 };
